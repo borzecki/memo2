@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memo2/static/css/main.6d0ca5d5.css",
+    "main.css": "/memo2/static/css/main.eee3c076.css",
     "main.js": "/memo2/static/js/main.1932c430.js",
     "static/js/787.158ce49f.chunk.js": "/memo2/static/js/787.158ce49f.chunk.js",
     "static/media/open-sans-all-400-normal.woff": "/memo2/static/media/open-sans-all-400-normal.fd1a30188fbba33c1971.woff",
@@ -13,12 +13,12 @@
     "static/media/open-sans-vietnamese-400-normal.woff2": "/memo2/static/media/open-sans-vietnamese-400-normal.1970138327ca2599f2c5.woff2",
     "static/media/open-sans-greek-ext-400-normal.woff2": "/memo2/static/media/open-sans-greek-ext-400-normal.7f0c7c378a3ca829b189.woff2",
     "index.html": "/memo2/index.html",
-    "main.6d0ca5d5.css.map": "/memo2/static/css/main.6d0ca5d5.css.map",
+    "main.eee3c076.css.map": "/memo2/static/css/main.eee3c076.css.map",
     "main.1932c430.js.map": "/memo2/static/js/main.1932c430.js.map",
     "787.158ce49f.chunk.js.map": "/memo2/static/js/787.158ce49f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d0ca5d5.css",
+    "static/css/main.eee3c076.css",
     "static/js/main.1932c430.js"
   ]
 }
