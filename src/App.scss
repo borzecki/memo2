@@ -1,0 +1,163 @@
+$blue: #4e6fae;
+$green: #2bb050;
+$red: #bc2626;
+
+body {
+  color: black;
+  text-align: center;
+  font-family: "Open Sans";
+  background: radial-gradient(
+      108.33% 84.48% at 100% 0%,
+      rgba(130, 24, 94, 0.2) 0%,
+      rgba(255, 0, 199, 0) 100%
+    ),
+    radial-gradient(
+      118.85% 101.13% at 0% 0%,
+      rgba(250, 255, 0, 0.22) 0%,
+      rgba(250, 255, 0, 0) 100%
+    ),
+    #ffffff;
+  width: 1440px;
+  height: 1024px;
+}
+
+.circus {
+  position: relative;
+  height: 240px;
+  width: 210px;
+}
+
+.spinner {
+  transform: scale(0.6);
+  animation: spin 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+
+.menu-wrapper {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.counter-wrapper {
+  color: $blue;
+
+  .name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .counter {
+    font-weight: 800;
+    font-size: 40px;
+  }
+}
+
+.top-bar {
+  position: absolute;
+  width: 100vw;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+
+  background: #4e6fae;
+}
+
+.center-wrapper {
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.right-wrapper {
+  width: calc(100vw - 25px);
+  justify-content: flex-end;
+  gap: 40px;
+  display: flex;
+}
+
+.info {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 40px 0;
+  color: $blue;
+}
+
+.card {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+
+  background: #ffffff;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+
+  .letter {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 120px;
+
+    color: $blue;
+
+    text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+  }
+
+  .lower {
+    font-size: 20px;
+    color: #4e70ae8c;
+  }
+}
+
+.round-block {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  cursor: pointer;
+
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: $blue;
+
+  &.menu {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  transition: 100ms ease-in;
+
+  &.false {
+    background-color: $red;
+    color: white;
+  }
+
+  &.true {
+    background-color: $green;
+    color: white;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
